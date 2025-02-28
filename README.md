@@ -26,3 +26,25 @@ The repository includes two main scripts:
   Install using pip:
   ```bash
   pip install python-docx
+
+## Usage
+
+1. **Rename Speaker IDs**
+
+Place your .docx and corresponding .json files in the same directory as the scripts. Then run:
+
+```bash
+python rename_speakers.py
+```
+
+This will generate new DOCX files with the prefix edited_ where the speaker IDs have been replaced with speaker names.
+
+2. **Format Transcripts**
+
+After running the first script, format the edited transcripts by running:
+
+```bash
+python format_transcripts.py
+```
+
+This will create new DOCX files with the prefix formatted_, where the dialogue blocks are reformatted and each unique speaker name is highlighted in a unique color.
